@@ -17,7 +17,7 @@ class ViewController: UIViewController {
             if let textFieldNumber = Int(textFieldString) {
                 print(textFieldNumber)
             } else {
-                print("The text is not convertible to a Double")
+                print("The text is not convertible to an integer")
             }
         }
     }
