@@ -11,15 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBAction func runButtonTapped(_ sender: Any) {
-        if let textFieldString = textField.text {
-            print(textFieldString)
-            
-            if let textFieldNumber = Int(textFieldString) {
-                print(textFieldNumber)
-            } else {
-                print("The text is not convertible to an integer")
-            }
+        guard let textFieldString = textField.text else {return}
+        guard let textFieldNumber = Int(textFieldString) else {
+            print("Text is not convertible to integer")
+            return            
         }
+
+        print(textFieldString)
+        print(textFieldNumber)
     }
     
     override func viewDidLoad() {
