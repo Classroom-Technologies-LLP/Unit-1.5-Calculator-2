@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         if let textFieldString = textField.text {
             print(textFieldString)
             
-            if let textFieldNumber = Double(textFieldString) {
+            if let textFieldNumber = Int(textFieldString) {
                 print(textFieldNumber)
             } else {
                 print("The text is not convertible to a Double")
