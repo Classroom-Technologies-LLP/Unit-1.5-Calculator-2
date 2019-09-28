@@ -64,11 +64,19 @@
                                     <action selector="divButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aey-dt-J8z"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiC-C3-bbT">
+                                <rect key="frame" x="20" y="108" width="374" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="resultLabel" destination="SiC-C3-bbT" id="agw-6W-VDp"/>
                         <outlet property="textField1" destination="9u2-Rb-Y1X" id="h87-W1-x4s"/>
                         <outlet property="textField2" destination="YoY-qw-LAD" id="TaG-A9-x1n"/>
                     </connections>

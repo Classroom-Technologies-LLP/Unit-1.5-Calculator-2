@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func addButtonTapped(_ sender: Any) {
         // Get text property from textField1 and convert to Double
@@ -27,8 +28,7 @@ class ViewController: UIViewController {
             return
         }
         
-        // Both text fields' text properties can be converted to Double, so add them
-        print(textField1Number + textField2Number)
+        resultLabel.text = String(textField1Number + textField2Number)
 
     }
     
@@ -47,9 +47,8 @@ class ViewController: UIViewController {
             return
         }
         
-        // Both text fields' text properties can be converted to Double, so add them
-        print(textField1Number - textField2Number)
-        
+        resultLabel.text = String(textField1Number - textField2Number)
+
     }
     
     @IBAction func mulButtonTapped(_ sender: Any) {
@@ -67,9 +66,8 @@ class ViewController: UIViewController {
             return
         }
         
-        // Both text fields' text properties can be converted to Double, so add them
-        print(textField1Number * textField2Number)
-        
+        resultLabel.text = String(textField1Number * textField2Number)
+
     }
     
     @IBAction func divButtonTapped(_ sender: Any) {
@@ -87,9 +85,8 @@ class ViewController: UIViewController {
             return
         }
         
-        // Both text fields' text properties can be converted to Double, so add them
-        print(textField1Number / textField2Number)
-        
+        resultLabel.text = String(textField1Number / textField2Number)
+
     }
     
     override func viewDidLoad() {
